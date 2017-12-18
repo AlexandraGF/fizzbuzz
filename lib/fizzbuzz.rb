@@ -1,13 +1,12 @@
-class FizzBuzz
-  def divisible_by(number)
-    if number % 15 == 0
+
+  def fizzbuzz(number)
+    if number % 3 == 0 && number % 5 == 0
       "FizzBuzz"
     elsif number % 3 == 0
       "Fizz"
     elsif number % 5 == 0
       "Buzz"
     else
-      number
+      return number
     end
   end
-end
